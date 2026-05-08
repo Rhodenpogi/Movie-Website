@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOH B Box</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--- google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+
+  <body>
+    <!-- navbar starts -->
+    <header>
+  <nav class="navbar">
+    <!-- ✅ Logo at the left -->
+    <a href="index.html" class="logo">
+       <img src="../images/logo.png" alt="" style="width: 180px; height: 60px;" />
+    </a>
+
+<!-- Modal for Sign In/Sign Up -->
+<div id="auth-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="tab">
+      <button class="tablinks active" onclick="openTab(event, 'login')">Log In</button>
+      <button class="tablinks" onclick="openTab(event, 'signup')">Sign Up</button>
+    </div>
+    
+    <div id="login" class="tabcontent" style="display: block;">
+      <h3>Log In</h3>
+      <form id="login-form">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Log In</button>
+      </form>
+    </div>
+    
+    <div id="signup" class="tabcontent">
+      <h3>Sign Up</h3>
+      <form id="signup-form">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <!-- ✅ Navigation Links -->
+    <ul class="nav-list">
+  <li class="home"><a href="#home">Home</a></li>
+  <li><a href="#movie">Movie</a></li>
+  <li><a href="#k-drama">K-Drama</a></li>
+  <li><a href="#upcoming">Upcoming</a></li> 
+  <button class="btn">SIGN IN</button>
+</ul>
+
+
+    <!-- ✅ Hamburger Icon (for mobile) -->
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </nav>
+</header>
+
+
+   <!-- hero section starts  -->
+<section class="hero" id="home" style="background-image: url('../images/hero-bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+  <div class="main">
+    <div class="content">
+      <p>MOH B Box</p>
+      <h1>Unlimited <strong>Movie</strong>, TVs Shows, & More.</h1>
+
+      <div class="meta-wrapper">
+        <div class="badge">
+          <span>PG 4</span>
+          <span>HD</span>
+        </div>
+
+        <div class="genre">
+          <span><a href="#">Free Movie</a> <a href="#">Website</a></span>
+        </div>
+
+        <div class="date-time">
+          <span><i class="fa-solid fa-calendar-days"></i> 2025</span>
+          <span><i class="fa-regular fa-clock"></i> Complete Eps</span>
+        </div>
+      </div>
+
+      <div class="watch-btn">
+        <button><i class="fa-solid fa-play"></i> Watch Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- upcoming movie section starts  -->
+    <section class="upcoming-movie" id="upcoming" style="background-image: url('../images/upcoming-bg.png'); background-size: cover; background-position: center;">
+      <div class="header">
+        <div class="subtitle">
+          <small>online Streaming</small>
+          <h4>Upcoming Movies</h4>
+        </div>
+       <div class="buttons">
+  <button onclick="document.getElementById('movie').scrollIntoView({behavior: 'smooth'});">Movies</button>
+  <button onclick="document.getElementById('k-drama').scrollIntoView({behavior: 'smooth'});">K-drama</button>
+  <button onclick="document.getElementById('movie').scrollIntoView({behavior: 'smooth'});">Anime</button>
+</div>
+      </div>
+      <div class="movie-card">  
+        <div class="wrapper">
+          <ul class="movie-carousel">
+            <li class="card">
+              <div class="img">
+  <a href="movie-detail.html?movie=upcoming-1"><img src="../images/upcoming-1.png" alt=""a>
+
+              <div class="title">
+                <a href="movie-detail.html"><h4>The Northman</h4></a>
+                <span>2022</span>
+              </div>
+              <div class="footer">
+                <span>HD</span>
+                <div class="time-rating">
+                  <span><i class="fa-regular fa-clock"></i> 137 min</span>
+                  <span><i class="fa-solid fa-star"></i> 8.5</span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+             <div class="img">
+  <a href="movie-detail.html?movie=upcoming-2"><img src="../images/upcoming-2.png" alt="" a>
+</div>
+              <div class="title">
+                <a href="movie-detail.html"><h4>Doctor Strange</h4></a>
+                <span>2022</span>
+              </div>
+              <div class="footer">
+                <span>4K</span>
+                <div class="time-rating">
+                  <span><i class="fa-regular fa-clock"></i> 126 min</span>
+                  <span><i class="fa-solid fa-star"></i> 8.5</span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+             <div class="img">
+  <a href="movie-detail.html?movie=upcoming-3"><img src="../images/upcoming-3.png" alt="" a>
+</div>
+              <div class="title">
+                <a href="movie-detail.html"><h4>Memory</h4></a>
+                <span>2022</span>
+              </div>
+              <div class="footer">
+                <span>2K</span>
+                <div class="time-rating">
+                  <span><i class="fa-regular fa-clock"></i> N/A</span>
+                  <span><i class="fa-solid fa-star"></i> 8.5</span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <a href="movie-detail.html?movie=upcoming-4"><img src="../images/upcoming-4.png" alt="" a>             
+                 </div>
+              <div class="title">
+                <a href="movie-detail.html"><h4>Unbearable Weight</h4></a>
+                <span>2022</span>
+              </div>
+              <div class="footer">
+                <span>HD</span>
+                <div class="time-rating">
+                  <span><i class="fa-regular fa-clock"></i> 107 min</span>
+                  <span><i class="fa-solid fa-star"></i> 8.5</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- service section starts -->
+    <section class="service">
+      <div class="main">
+        <div class="img">
+          <img src="../images/service-banner.png" alt="" />
+        </div>
+        <div class="content">
+          <small>our services</small>
+          <h4>Download Your Favorites. Watch Anytime, Anywhere.</h4>
+          <p>
+            Whether you’re flying, commuting, or just offline, you can still enjoy your favorite movies and 
+            shows in stunning HD 4K resolution. Download content directly to your device and watch without limits.
+          </p>
+          <ul class="list">
+            <li>
+              <div class="service-card">
+                <div class="img">
+                  <div class="icon">
+                    <i class="fa-solid fa-tv"></i>
+                  </div>
+                </div>
+                <div class="service-content">
+                  <h5>Enjoy on Your TV</h5>
+                  <p>
+                    Stream directly to your smart TV or cast from your phone. Experience cinematic 
+                    visuals and immersive sound, just like the theater — from your couch.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <hr />
+            <li>
+              <div class="service-card">
+                <div class="img">
+                  <div class="icon">
+                    <i class="fa-solid fa-video"></i>
+                  </div>
+                </div>
+                <div class="service-content">
+                  <h5>Watch Everywhere</h5>
+                  <p>
+                    Take your entertainment on the go. Download movies on your laptop, tablet, or 
+                    phone and watch offline — no Wi-Fi needed.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- top movie section start  -->
+    <section class="top-movie same" id="movie" style="background-image: '../images/top-rated-bg.png'; background-size: cover; background-position: center;">
+      <div class="header">
+        <small>online streaming</small>
+        <h4>Top Rated Movies</h4>
+      </div>
+      <div class="top-movie-main">
+        <div class="buttons">
+          <button>movies</button>
+          <button>tv shows</button>
+          <button>documentry</button>
+          <button>anime</button>
+        </div>
+        <div class="movie-card">
+          <ul class="wrapper">
+            <li class="card">
+              <div class="img">
+                <a href="movie-detail.html?movie=movie-1"><img src="../images/sonic.png" alt="" /></a>
+              </div>
+              <div class="title">
+                <a href="movie-detail.html"><h4>Sonic The Hedgehog 2</h4></a>
+                <span>2022</span>
+              </div>
+              <div class="footer">
+                <span>2K</span>
+                <div class="time-rating">
+                  <span><i class="fa-regular fa-clock"></i> 122 min</span>
+                  <span><i class="fa-solid fa-star"></i> 7.8</span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <a href="movie-detail.html?movie=movie-2"><img src="../images/yourname.jpg" alt="" /></a>
+              </div>
+              <div class="title">
+                <a href="movie-detail.html"><h4>Your Name</h4></a>
+                <span>2016</span>
+              </div>
+              <div class="footer">
+                <span>HD</span>
+                <div class="time-rating">
+                  <span><i class="fa-regular fa-clock"></i> 106 min</span>
+                  <span><i class="fa-solid fa-star"></i> 5.9</span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <a href="movie-detail.html?movie=movie-3"><img src="../images/howtotrainyourdragon.jpg" alt="" /></a>
+              </div>
+              <div class="title">
+                <a href="movie-detail.html"><h4>How To Train Your Dragon</h4></a>
+                <span>2010</span>
+              </div>
+              <div class="footer">
+                <span>4K</span>
+                <div class="time-rating">
+                  <span><i class="fa-regular fa-clock"></i> 98 min</span>
+                  <span><i class="fa-solid fa-star"></i> 7.0</span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <a href="movie-detail.html?movie=movie-4"><img src="../images/jurrasic world.jpg" alt="" /></a>
+              </div>
+              <div class="title">
+                <a href="movie-detail.html"><h4>Jurrasic World</h4></a>
+                <span>2015</span>
+              </div>
+              <div class="footer">
+                <span>4K</span>
+                <div class="time-rating">
+                  <span><i class="fa-regular fa-clock"></i> 124 min</span>
+                  <span><i class="fa-solid fa-star"></i> 7.7</span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <a href="movie-detail.html?movie=movie-5"><img src="../images/wall e.jpg" alt="" /></a>
+              </div>
+              <div class="title">
+                <a href="movie-detail.html"><h4>WALL·E</h4></a>
+                <span>2018</span>
+              </div>
+              <div class="footer">
+                <span>4K</span>
+                <div class="time-rating">
+                  <span><i class="fa-regular fa-clock"></i> 98 min</span>
+                  <span><i class="fa-solid fa-star"></i> 7.9</span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <a href="movie-detail.html?movie=movie-6"><img src="../images/up.jpg" alt="" /></a>
+              </div>
+              <div class="title">
+                <a href="movie-detail.html"><h4>UP</h4></a>
+                <span>2009</span>
+              </div>
+              <div class="footer">
+                <span>HD</span>
+                <div class="time-rating">
+                  <span><i class="fa-regular fa-clock"></i> 96 min</span>
+                  <span><i class="fa-solid fa-star"></i> 7.0</span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <a href="movie-detail.html?movie=movie-7"><img src="../images/COCO.jpg" alt="" /></a>
+              </div>
+              <div class="title">
+                <a href="movie-detail.html"><h4>Coco</h4></a>
+                <span>2017</span>
+              </div>
+              <div class="footer">
+                <span>2K</span>
+                <div class="time-rating">
+                  <span><i class="fa-regular fa-clock"></i> 105 min</span>
+                  <span><i class="fa-solid fa-star"></i> 6.5</span>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <a href="movie-detail.html?movie=movie-8"><img src="../images/hello world.jpg" alt="" /></a>
+              </div>
+              <div class="title">
+                <a href="movie-detail.html"><h4>Hello World</h4></a>
+                <span>2019</span>
+              </div>
+              <div class="footer">
+                <span>HD</span>
+                <div class="time-rating">
+                  <span><i class="fa-regular fa-clock"></i> 97 min</span>
+                  <span><i class="fa-solid fa-star"></i> 7.0</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- tvs series section starts  -->
+    <section class="tv-series same" id="k-drama">
+      <div class="header">
+        <small>best tv series</small>
+        <h4>K-Drama Series</h4>
+      </div>
+      <div class="movie-card">
+        <ul class="wrapper">
+          <li class="card">
+            <div class="img">
+              <a href="movie-detail.html?movie=series-1"><img src="../images/pinnochio.jpg" alt="" /></a>
+            </div>
+            <div class="title">
+              <a href="movie-detail.html"><h4>Pinnochio</h4></a>
+              <span>2014</span>
+            </div>
+            <div class="footer">
+              <span>2K</span>
+              <div class="time-rating">
+                <span><i class="fa-regular fa-clock"></i> 59 min</span>
+                <span><i class="fa-solid fa-star"></i> 20 Eps</span>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="img">
+              <a href="movie-detail.html?movie=series-2"><img src="../images/all-of-us-are-dead.jpg" alt="" /></a>
+            </div>
+            <div class="title">
+              <a href="movie-detail.html"><h4>All Of Us Are Dead</h4></a>
+              <span>2022</span>
+            </div>
+            <div class="footer">
+              <span>2K</span>
+              <div class="time-rating">
+                <span><i class="fa-regular fa-clock"></i> 59 min</span>
+                <span><i class="fa-solid fa-star"></i> 12 Eps</span>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="img">
+              <a href="movie-detail.html?movie=series-3"><img src="../images/happiness.jpg" alt="" /></a>
+            </div>
+            <div class="title">
+              <a href="movie-detail.html"><h4>Happiness</h4></a>
+              <span>2021</span>
+            </div>
+            <div class="footer">
+              <span>2K</span>
+              <div class="time-rating">
+                <span><i class="fa-regular fa-clock"></i> 51 min</span>
+                <span><i class="fa-solid fa-star"></i> 12 Eps</span>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="img">
+              <a href="movie-detail.html?movie=series-4"><img src="../images/true beauty.jpg" alt="" /></a>
+            </div>
+            <div class="title">
+              <a href="movie-detail.html"><h4>True Beauty</h4></a>
+              <span>2020</span>
+            </div>
+            <div class="footer">
+              <span>4K</span>
+              <div class="time-rating">
+                <span><i class="fa-regular fa-clock"></i>  59 min</span>
+                <span><i class="fa-solid fa-star"></i> 16 Eps</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- trial section starts  -->
+    <section class="trial">
+      <div class="main">
+        <div class="content">
+          <h4>trial start first 30 days</h4>
+          <p>Enter your email to create or restart your membership.</p>
+        </div>
+        <div class="form">
+          <div class="input" >
+            <input type="email" placeholder="Enter Your Email">
+            <button>get started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- footer section start -->
+    <footer>
+      <div class="main">
+        <div class="footer-top">
+          <nav>
+            <div class="logo">
+              <img src="../images/logo.png" alt="" style="width: 170px; height: 45px;" />
+            </div>
+            <ul class="list">
+              <li><a href="#home">home</a></li>
+              <li><a href="#movie">movie</a></li>
+              <li><a href="#k-drama">K-Drama</a></li>
+              <li><a href="#upcoming">upcoming</a></li>
+            
+            </ul>
+          </nav>
+          <hr>
+          <div class="links">
+            <div class="text-links">
+              <a href="faq.html" target="_blank">faq</a>
+              <a href="terms-of-use.html" target="_blank">terms of use</a>
+              <a href="privacy.html" target="_blank">privacy</a>
+            </div>
+           <div class="social-links">
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://x.com/login"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.tiktok.com/login"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="../images/footer-bottom-img.jpg">
+         <div class="footer-bottom">
+          <div class="copyright">
+            <p>&#169; 2025 <a href="johnrhodenmanalo@gmail.com">BSIT 1-B</a>. Mananquil, Orense, Hernandez, Balitustus</p>
+          </div>
+             <div class="../images/footer-bottom-img.jpg">
+               <img src="../images/footer-bottom-img.jpg" alt="">
+             </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top"><i class="fa-solid fa-chevron-up"></i></button>
+
+    <script src="js/script.js"></script>
+    <script src="js/navbar.js"></script>
+
+    <script>
+  // Your code here
+  let hamburgerbtn = document.querySelector(".hamburger");
+  let nav_list = document.querySelector(".nav-list");
+  let closebtn = document.querySelector(".close");
+  hamburgerbtn.addEventListener("click", () => {
+    nav_list.classList.add("active");
+  });
+  closebtn.addEventListener("click", () => {
+    nav_list.classList.remove("active");
+  });
+
+  // Modal functionality
+  const modal = document.getElementById('auth-modal');
+  const signInBtn = document.querySelector('.navbar ul .btn'); // The SIGN IN button
+  const closeBtn = document.querySelector('.close');
+
+  // Open modal when SIGN IN is clicked
+  signInBtn.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent default link behavior
+    modal.style.display = 'block';
+  });
+
+  // Close modal when X is clicked
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  // Close modal when clicking outside
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+
+  // Tab switching
+  function openTab(evt, tabName) {
+    const tabcontent = document.querySelectorAll('.tabcontent');
+    const tablinks = document.querySelectorAll('.tablinks');
+    tabcontent.forEach(content => content.style.display = 'none');
+    tablinks.forEach(link => link.classList.remove('active'));
+    document.getElementById(tabName).style.display = 'block';
+    evt.currentTarget.classList.add('active');
+  }
+
+  // Form submission
+  document.getElementById('login-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Thank you for signing up now you can watch free movie for 30 days'); // Success message
+    modal.style.display = 'none';
+  });
+
+  document.getElementById('signup-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const password = e.target.querySelector('input[type="password"]').value;
+    const confirmPassword = e.target.querySelector('input[type="password"]:nth-child(3)').value;
+    if (password !== confirmPassword) {
+      alert('Passwords do not match!');
+      return;
+    }
+    alert('Thank you for signing up now you can watch free movie for 30 days'); // Success message
+    modal.style.display = 'none';
+  });
+const getStartedBtn = document.querySelector('.trial .input button'); // Select the button
+if (getStartedBtn) {  // Safety check
+  getStartedBtn.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent default behavior
+    const modal = document.getElementById('auth-modal');
+    modal.style.display = 'block'; // Open modal
+    // Switch to Sign Up tab
+    document.getElementById('login').style.display = 'none';
+    document.getElementById('signup').style.display = 'block';
+    document.querySelectorAll('.tablinks').forEach(link => link.classList.remove('active'));
+    document.querySelector('.tablinks:nth-child(2)').classList.add('active');
+  });
+} else {
+  console.error('Get Started button not found. Check the selector.');
+}
+</script>
+</body>
+  </body>
+</html>

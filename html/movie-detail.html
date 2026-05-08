@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Detail Page</title>
+   <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="../css/movie.css">
+
+    <!--- google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Fontawesome Link for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+           <img src="../images/logo.png" alt="" style="width: 180px; height: 60px;" />
+        </div>
+        <ul class="nav-list">
+          <div class="logo">
+             <img src="../images/logo.png" alt="" style="width: 180px; height: 60px;" />
+            <button class="close"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <li class="home"><a href="index.html">home</a></li>
+          <li><a href="index.html">movie</a></li>
+          <li><a href="#k-drama">k-drama</a></li>
+          <li><a href="index.html">upcoming</a></li>
+          <button class="btn">SIGN IN</button>
+        </ul>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- movie-4detail section start  -->
+    <section class="movie-detail" style="background-image: url('../images/movie-detail-bg.png'); background-size: cover; background-position: center;"> 
+        <div class="main">
+            <div class="img">
+                <a href=""><img src="../images/jurrasic world.jpg" alt=""></a>
+                <i class="fa-regular fa-circle-play"></i>
+            </div>
+            <div class="content">
+                <strong>New Episodes</strong>
+                <h4>Jurrasic <span>World</span></h4>
+                <div class="badge-genre">
+                    <div class="badge">
+                        <span>PG 4</span>
+                        <span>HD</span>
+                    </div>
+                    <div class="genre">
+                        <a href="">Adventure</a>,
+                        <a href="">Action</a>,
+                        <a href="">Thriller</a>,
+                        <a href="">Science Fiction</a>
+                    </div>
+                </div>
+                <div class="date-time">
+                    <span><i class="fa-solid fa-calendar-days"></i> 2021</span>
+                    <span><i class="fa-regular fa-clock"></i> 115 min</span>
+                </div>
+                <p>A fully operational dinosaur theme park spirals into chaos when a genetically engineered super-predator escapes containment.</p>
+                <div class="detail-actions">
+                  <button>
+                    <i class="bi bi-share-fill"></i>
+                    <span>Share</span>
+                  </button>
+                  <div class="prime">
+                    <h5>Prime Video</h5>
+                    <small>Streaming Channels</small>
+                  </div>
+                  <div class="btn">
+                    <button><i class="fa-solid fa-play"></i> Watch Now </button>
+                    <button id="fullscreen-btn"><i class="fa-solid fa-expand"></i> FULLSCREEN</button>
+                  </div>
+                  <!-- Hidden video container for embedded movie -->
+                  <div id="video-container" style="display: none; margin-top: 20px; text-align: center;">
+
+                    <iframe id="movie-iframe" width="100%" height="400" src="YOUR_VIDEO_LINK"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="download-btn">
+            <a href="../images/jurrasic world.jpg" download>download <i class="fa-solid fa-download"></i></a>
+        </div>
+    </section>
+
+    <!-- tvs series section starts  -->
+    <section class="tv-series same" id="k-drama">
+      <div class="header">
+        <small>best tv series</small>
+        <h4>K-Drama Series</h4>
+      </div>
+      <div class="movie-card">
+        <ul class="wrapper">
+          <li class="card">
+            <div class="img">
+              <a href="?movie=series-1"><img src="../images/pinnochio.jpg" alt="" /></a>
+            </div>
+            <div class="title">
+              <a href="?movie=series-1"><h4>Pinnochio</h4></a>
+              <span>2014</span>
+            </div>
+            <div class="footer">
+              <span>2K</span>
+              <div class="time-rating">
+                <span><i class="fa-regular fa-clock"></i> 59 min</span>
+                <span><i class="fa-solid fa-star"></i> 20 Eps</span>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="img">
+              <a href="?movie=series-2"><img src="../images/all-of-us-are-dead.jpg" alt="" /></a>
+            </div>
+            <div class="title">
+              <a href="?movie=series-2"><h4>All Of Us Are Dead</h4></a>
+              <span>2022</span>
+            </div>
+            <div class="footer">
+              <span>2K</span>
+              <div class="time-rating">
+                <span><i class="fa-regular fa-clock"></i> 59 min</span>
+                <span><i class="fa-solid fa-star"></i> 12 Eps</span>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="img">
+              <a href="?movie=series-3"><img src="../images/happiness.jpg" alt="" /></a>
+            </div>
+            <div class="title">
+              <a href="?movie=series-3"><h4>Happiness</h4></a>
+              <span>2021</span>
+            </div>
+            <div class="footer">
+              <span>2K</span>
+              <div class="time-rating">
+                <span><i class="fa-regular fa-clock"></i> 59 min</span>
+                <span><i class="fa-solid fa-star"></i> 12 Eps</span>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="img">
+              <a href="?movie=series-4"><img src="../images/true beauty.jpg" alt="" /></a>
+            </div>
+            <div class="title">
+              <a href="?movie=series-4"><h4>True Beauty</h4></a>
+              <span>2020</span>
+            </div>
+            <div class="footer">
+              <span>4K</span>
+              <div class="time-rating">
+                <span><i class="fa-regular fa-clock"></i> 59 min</span>
+                <span><i class="fa-solid fa-star"></i> 16 Eps</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer>
+      <div class="main">
+        <div class="footer-top">
+          <nav>
+            <div class="logo">
+               <img src="../images/logo.png" alt="" style="width: 170px; height: 45px;" />
+            </div>
+            <ul class="list">
+              <li><a href="index.html">home</a></li>
+              <li><a href="index.html">movie</a></li>
+              <li><a href="#k-drama">k-drama</a></li>
+              <li><a href="index.html">upcoming</a></li>
+            </ul>
+          </nav>
+          <hr />
+          <div class="links">
+            <div class="text-links">
+              <a href="faq.html" target="_blank">faq</a>
+              <a href="terms-of-use.html" target="_blank">terms of use</a>
+              <a href="privacy.html" target="_blank">privacy</a>
+            </div>
+            <div class="social-links">
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://x.com/login"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.tiktok.com/login"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="copyright">
+            <p>&#169; 2022 <a href="">pawantech12</a>. All Rights Reserved</p>
+          </div>
+          <div class="img">
+            <img src="../images/footer-bottom-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/navbar.js"></script>
+    <script>
+  // This map has details for each movie/series
+  const movieDetails = {
+    'movie-1': { title: 'Sonic The Hedgehog 2', year: '2022', description: 'A hedgehog embarks on an adventure.', genres: ['Comedy', 'Action', 'Adventure', 'Science Fiction'], image: '../images/sonic.png', 
+    downloadLink: '../images/sonic.png', 
+  videoUrl: 'https://lok-lok.cc/spa/videoPlayPage/movies/sonic-the-hedgehog-2-QWaxYokobg?id=219080803538586400&type=/movie/detail&lang=en'},
+    'movie-2': { title: 'Your name', year: '2016', description: 'Two teenagers mysteriously begin swapping bodies and form a deep emotional connection as they try to find each other across time and memory.', genres: ['Romance, Drama, Fantasy, Supernatural, Coming-of-Age'], image: '../images/yourname.jpg', 
+    downloadLink: '../images/yourname.jpg',
+  videoUrl:'https://lok-lok.cc/spa/videoPlayPage/movies/your-name-EAK9NIdKlb5?id=4350152697279040288&type=/movie/detail&lang=en' },
+    'movie-3': { title: 'How To Train Your Dragon', year: '2010', description: 'A young Viking forms an unlikely bond with a gentle dragon, challenging his tribe’s traditions and changing his world forever.', genres: ['Animation, Adventure, Family, Fantasy, Action'], image: '../images/howtotrainyourdragon.jpg',
+     downloadLink: '../images/howtotrainyourdragon.jpg', 
+    videoUrl: 'https://lok-lok.cc/spa/videoPlayPage/movies/how-to-train-your-dragon-UW3lGVGTx23?id=2552373621440282920&type=/movie/detail&lang=en' },
+    'movie-4': { title: 'Jurrasic World', year: '2015', description: 'A fully operational dinosaur theme park spirals into chaos when a genetically engineered super-predator escapes containment.', genres: ['Action, Adventure, Sci-Fi, Thriller'], image: '../images/jurrasic world.jpg',
+     downloadLink: '../images/jurrasic world.jpg', 
+      videoUrl: 'https://lok-lok.cc/spa/videoPlayPage/movies/jurassic-world-rebirth-KH44jQJUSu1?id=1257402142307009144&type=/movie/detail&lang=en'},
+    'movie-5': { title: 'WALL·E', year: '2018', description: 'A lonely trash-compacting robot discovers love and hope when he follows a sleek probe droid across the galaxy.', genres: ['Animation, Adventure, Family, Romance, Sci-Fi'], image: '../images/wall e.jpg', 
+    downloadLink: '../images/wall e.jpg', 
+      videoUrl: 'https://lok-lok.cc/spa/videoPlayPage/movies/wall-e-geh63aDJwA8?id=7208877623064547000&type=/movie/detail&lang=en'},
+    'movie-6': { title: 'UP', year: '2009', description: 'An elderly widower sets off on an unexpected adventure to South America in a house lifted by balloons, accompanied by a spirited young boy scout.', genres: ['Animation, Adventure, Family, Comedy, Drama'], image: '../images/up.jpg', 
+    downloadLink: '../images/up.jpg', 
+      videoUrl:'https://lok-lok.cc/spa/videoPlayPage/movies/up-wUC4HVedUr5?id=4574271841052806840&type=/movie/detail&lang=en' },
+    'movie-7': { title: 'Coco', year: '2017', description: 'A young boy passionate about music finds himself in the Land of the Dead, where he uncovers his familys history and learns the true meaning of remembrance.', genres: ['Animation, Adventure, Family, Fantasy, Musical, Drama'], image: '../images/COCO.jpg', 
+    downloadLink: '../images/COCO.jpg', 
+      videoUrl: 'https://lok-lok.cc/spa/videoPlayPage/movies/coco-SbycYK4mvca?id=8562284986265657352&type=/movie/detail&lang=en'},
+    'movie-8': { title: 'Hello world', year: '2022', description: 'Origins of a secret service.', genres: ['Action', 'Comedy', 'History'], image: '../images/hello world.jpg', 
+    downloadLink: '../images/hello world.jpg', 
+    videoUrl: 'https://lok-lok.cc/spa/videoPlayPage/movies/hello-world-aJWXT14UWia?id=8649522382002078544&type=/movie/detail&lang=en'},
+    
+    'upcoming-1': { title: 'The Northman', year: '2022', description: 'A Viking prince seeks revenge.', genres: ['Action', 'Adventure', 'Drama'], image: '../images/upcoming-1.png', 
+    downloadLink: '../images/upcoming-1.png' },
+    'upcoming-2': { title: 'Doctor Strange', year: '2022', description: 'A sorcerer battles mystical threats.', genres: ['Action', 'Adventure', 'Fantasy'], image: '../images/upcoming-2.png', 
+    downloadLink: '../images/upcoming-2.png' },
+    'upcoming-3': { title: 'Memory', year: '2022', description: 'A thriller about memory and crime.', genres: ['Thriller', 'Action'], image: '../images/upcoming-3.png',
+     downloadLink: '../images/upcoming-3.png' },
+    'upcoming-4': { title: 'Unbearable Weight', year: '2022', description: 'A documentary on societal pressures.', genres: ['Documentary'], image: '../images/upcoming-4.png',
+     downloadLink: '../images/upcoming-4.png' },
+    
+     'series-1': { title: 'Pinocchio', year: '2014', description: 'A young boy, whose life and family has been destroyed by new media, gets adopted by a family in a rural area after being found lost at sea. He conceals his past for 13 years. But then the girl he loves, a reporter, finds out the truth.', genres: ['Action', 'Fantasy', 'Drama'], image: '../images/pinnochio.jpg',
+      downloadLink: '../images/pinnochio.jpg',
+   videoUrl: 'https://lok-lok.cc/spa/videoPlayPage/movies/pinocchio-Kh5dtjA5DN7?id=6546947736682774760&type=/movie/detail&lang=en'},
+    'series-2': { title: 'All Of Us Are Dead', year: '2022', description: 'A high school becomes ground zero for a zombie virus outbreak. Trapped students must fight their way out or turn into one of the rabid infected', genres: ['Action', 'Fantasy', 'Drama'], image: '../images/all-of-us-are-dead.jpg',
+     downloadLink: '../images/all-of-us-are-dead.jpg', 
+      videoUrl: 'https://lok-lok.cc/spa/videoPlayPage/movies/all-of-us-are-dead-Cn6l8bvNkG9?id=8126793059993537672&type=/movie/detail&lang=en' },
+    'series-3': { title: 'Happiness', year: '2021', description: 'An apocalyptic thriller that takes place in a time in which infectious diseases have become the new normal.', genres: ['Action', 'Drama', 'Fantasy'], image: '../images/happiness.jpg',
+     downloadLink: '../images/happiness.jpg',
+    videoUrl: 'https://lok-lok.cc/spa/videoPlayPage/movies/happiness-AU19TE5PMK?id=633366230002456992&type=/movie/detail&lang=en'  },
+    'series-4': { title: 'True Beauty', year: '2020', description: 'After being bullied and discriminated because of her ugly looks, a high school girl transforms herself into a gorgeous "goddess" and quickly rises to fame after mastering the art of makeup via online tutorial videos.', genres: ['Crime', 'Thriller', 'Drama'], image: '../images/true beauty.jpg',
+     downloadLink: '../images/true beauty.jpg',
+      videoUrl: 'https://lok-lok.cc/spa/videoPlayPage/movies/true-beauty-ytGtsTtp5H2?id=2261874892134042760&type=/movie/detail&lang=en'  }
+  };
+
+const iframe = document.getElementById("movie-iframe");
+const fsBtn = document.getElementById("fullscreen-btn");
+
+fsBtn.addEventListener("click", () => {
+    if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+    } else if (iframe.webkitRequestFullscreen) {
+        iframe.webkitRequestFullscreen();
+    } else if (iframe.msRequestFullscreen) {
+        iframe.msRequestFullscreen();
+    }
+});
+
+  // para magamit ang video URL (e.g., ?movie=movie-1)
+  const urlParams = new URLSearchParams(window.location.search);
+  const movieId = urlParams.get('movie');
+
+  // if exist
+  if (movieId && movieDetails[movieId]) {
+    const details = movieDetails[movieId];
+    document.querySelector('.movie-detail .img img').src = details.image;
+    document.querySelector('.movie-detail .content h4').innerHTML = `${details.title} <span></span>`;
+    document.querySelector('.movie-detail .date-time span:first-child').innerHTML = `<i class="fa-solid fa-calendar-days"></i> ${details.year}`;
+    document.querySelector('.movie-detail .content p').textContent = details.description;
+    const genreContainer = document.querySelector('.movie-detail .badge-genre .genre');
+    genreContainer.innerHTML = details.genres.map(genre => `<a href="">${genre},</a>`).join(' ');
+    document.querySelector('.movie-detail .download-btn a').href = details.downloadLink;
+    const watchBtn = document.querySelector('.detail-actions .btn button');
+if (watchBtn && details.videoUrl) {
+  watchBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    console.log('Watch Now clicked for:', details.title);  // Debug log
+    console.log('Video URL:', details.videoUrl);  // Check if URL is set
+    const container = document.getElementById('video-container');
+    const iframe = document.getElementById('movie-iframe');
+    
+    try {
+      iframe.src = details.videoUrl;  // Try to load in iframe
+      container.style.display = 'block';
+      container.scrollIntoView({ behavior: 'smooth' });
+    } catch (error) {
+      console.error('Iframe blocked, opening in new tab:', error);
+      window.open(details.videoUrl, '_blank');  // Fallback: open in new tab
+    }
+  });
+} else {
+  console.log('No videoUrl for this movie or button not found');  
+}
+
+  }
+</script>
+  </body>
+</html>
